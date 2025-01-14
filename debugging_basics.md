@@ -29,10 +29,11 @@ gcc -g -o myprogram myprogram.c
 Start the debugger with your executable:
 
 bash
+```
 gdb ./myprogram
-
+```
 Key GDB Commands
-
+```
     break: Set breakpoints
         break line_number: Stop at a specific line
         break function_name: Stop at the start of a function
@@ -45,10 +46,9 @@ Key GDB Commands
     step/next: Navigate through code
         step: Step into function calls
         next: Step over function calls
-
+```
 Example Debugging Session
 ```
-bash
 # Compile with debugging symbols
 gcc -g -o fibonacci fibonacci.c
 
@@ -68,12 +68,12 @@ gdb ./fibonacci
 (gdb) continue
 ```
 Best Practices
-
+```
     Always compile with -g flag for full debugging information
     Use breakpoints strategically
     Examine variables at different execution points
     Understand program flow by stepping through code
-
+```
 GDB is an essential tool for developers, enabling deep insights into program behavior and helping to identify and resolve complex bugs efficiently1
 5
 .
@@ -87,17 +87,17 @@ Compilation Strategy
 1. Compile with Debugging Symbols
 Compile each source file with the -g flag and create object files:
 
-bash
+```
 gcc -g -c file1.c
 gcc -g -c file2.c
 gcc -g -c file3.c
-
+```
 2. Link All Object Files
 Link the object files together to create the executable:
 
-bash
+```
 gcc -g -o myprogram file1.o file2.o file3.o
-
+```
 Makefile Approach
 Use a flexible Makefile to manage compilation:
 
@@ -123,12 +123,12 @@ Common Debugging Techniques
 
 GDB Multifile Debugging
 
-bash
+```
 # Launch GDB
 gdb ./myprogram
 
 # Set breakpoints across files
 (gdb) break file2.c:linenum
 (gdb) break function_name
-
+```
 By following these steps, you'll resolve undefined reference issues and set up a robust debugging environment for multi-file C projects
