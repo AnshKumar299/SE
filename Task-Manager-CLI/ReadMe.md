@@ -7,9 +7,18 @@ It is a simple easy to use task manager that enables you to
 4. Remove
 5. Display tasks
 
+---
+
+### Task Properties
+
+Each task has three properties: 
+1. Name
+2. Description
+3. Status i.e. Done or Not Done
+
 --- 
 
-The Basic commands are:
+### The Basic commands are:
 1. help
    > To see command list
 2. add 'taskname'
@@ -27,3 +36,10 @@ The Basic commands are:
    > Displays only the incomplete tasks
 8. q
    > Stops the application and deletes the tasklist
+
+---
+
+#### Possible Additions in Future:
+
+1. Add a file too store the tasks so that when the application is re-run it can get the older tasks too
+2. A better method of printing everything
